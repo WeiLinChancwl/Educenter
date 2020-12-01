@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.william.educenter.mapper.AttachmentMapper" >
+  <resultMap id="BaseResultMap" type="net.william.educenter.entity.Attachment" >
+    <id column="attachment_id" property="attachmentId" jdbcType="INTEGER" />
+    <result column="attachment_url" property="attachmentUrl" jdbcType="VARCHAR" />
+    <result column="filename" property="filename" jdbcType="VARCHAR" />
+    <result column="filesize" property="filesize" jdbcType="VARCHAR" />
+    <result column="c_id" property="cId" jdbcType="INTEGER" />
+    <result column="train_id" property="trainId" jdbcType="INTEGER" />
+    <result column="s_id" property="sId" jdbcType="INTEGER" />
+    <result column="t_id" property="tId" jdbcType="INTEGER" />
+    <result column="attachment_type" property="attachmentType" jdbcType="VARCHAR" />
+    <result column="attachment_time" property="attachmentTime" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    attachment_id, attachment_url, filename, filesize, c_id, train_id, s_id, t_id, attachment_type, 
+    attachment_time
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="net.william.educenter.entity.AttachmentExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from tb_attachment
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_attachment
+    where attachment_id = #{attachmentId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tb_attachment
+    where attachment_id = #{attachmentId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="net.william.educenter.entity.AttachmentExample" >
+    delete from tb_attachment
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="net.william.educenter.entity.Attachment" >
+    insert into tb_attachment (attachment_id, attachment_url, filename, 
+      filesize, c_id, train_id, 
+      s_id, t_id, attachment_type, 
+      attachment_time)
+    values (#{attachmentId,jdbcType=INTEGER}, #{attachmentUrl,jdbcType=VARCHAR}, #{filename,jdbcType=VARCHAR}, 
+      #{filesize,jdbcType=VARCHAR}, #{cId,jdbcType=INTEGER}, #{trainId,jdbcType=INTEGER}, 
+      #{sId,jdbcType=INTEGER}, #{tId,jdbcType=INTEGER}, #{attachmentType,jdbcType=VARCHAR}, 
+      #{attachmentTime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="net.william.educenter.entity.Attachment" >
+    insert into tb_attachment
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="attachmentId != null" >
+        attachment_id,
+      </if>
+      <if test="attachmentUrl != null" >
+        attachment_url,
+      </if>
+      <if test="filename != null" >
+        filename,
+      </if>
+      <if test="filesize != null" >
+        filesize,
+      </if>
+      <if test="cId != null" >
+        c_id,
+      </if>
+      <if test="trainId != null" >
+        train_id,
+      </if>
+      <if test="sId != null" >
+        s_id,
+      </if>
+      <if test="tId != null" >
+        t_id,
+      </if>
+      <if test="attachmentType != null" >
+        attachment_type,
+      </if>
+      <if test="attachmentTime != null" >
+        attachment_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="attachmentId != null" >
+        #{attachmentId,jdbcType=INTEGER},
+      </if>
+      <if test="attachmentUrl != null" >
+        #{attachmentUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="filename != null" >
+        #{filename,jdbcType=VARCHAR},
+      </if>
+      <if test="filesize != null" >
+        #{filesize,jdbcType=VARCHAR},
+      </if>
+      <if test="cId != null" >
+        #{cId,jdbcType=INTEGER},
+      </if>
+      <if test="trainId != null" >
+        #{trainId,jdbcType=INTEGER},
+      </if>
+      <if test="sId != null" >
+        #{sId,jdbcType=INTEGER},
+      </if>
+      <if test="tId != null" >
+        #{tId,jdbcType=INTEGER},
+      </if>
+      <if test="attachmentType != null" >
+        #{attachmentType,jdbcType=VARCHAR},
+      </if>
+      <if test="attachmentTime != null" >
+        #{attachmentTime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="net.william.educenter.entity.AttachmentExample" resultType="java.lang.Integer" >
+    select count(*) from tb_attachment
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_attachment
+    <set >
+      <if test="record.attachmentId != null" >
+        attachment_id = #{record.attachmentId,jdbcType=INTEGER},
+      </if>
+      <if test="record.attachmentUrl != null" >
+        attachment_url = #{record.attachmentUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="record.filename != null" >
+        filename = #{record.filename,jdbcType=VARCHAR},
+      </if>
+      <if test="record.filesize != null" >
+        filesize = #{record.filesize,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cId != null" >
+        c_id = #{record.cId,jdbcType=INTEGER},
+      </if>
+      <if test="record.trainId != null" >
+        train_id = #{record.trainId,jdbcType=INTEGER},
+      </if>
+      <if test="record.sId != null" >
+        s_id = #{record.sId,jdbcType=INTEGER},
+      </if>
+      <if test="record.tId != null" >
+        t_id = #{record.tId,jdbcType=INTEGER},
+      </if>
+      <if test="record.attachmentType != null" >
+        attachment_type = #{record.attachmentType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.attachmentTime != null" >
+        attachment_time = #{record.attachmentTime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_attachment
+    set attachment_id = #{record.attachmentId,jdbcType=INTEGER},
+      attachment_url = #{record.attachmentUrl,jdbcType=VARCHAR},
+      filename = #{record.filename,jdbcType=VARCHAR},
+      filesize = #{record.filesize,jdbcType=VARCHAR},
+      c_id = #{record.cId,jdbcType=INTEGER},
+      train_id = #{record.trainId,jdbcType=INTEGER},
+      s_id = #{record.sId,jdbcType=INTEGER},
+      t_id = #{record.tId,jdbcType=INTEGER},
+      attachment_type = #{record.attachmentType,jdbcType=VARCHAR},
+      attachment_time = #{record.attachmentTime,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="net.william.educenter.entity.Attachment" >
+    update tb_attachment
+    <set >
+      <if test="attachmentUrl != null" >
+        attachment_url = #{attachmentUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="filename != null" >
+        filename = #{filename,jdbcType=VARCHAR},
+      </if>
+      <if test="filesize != null" >
+        filesize = #{filesize,jdbcType=VARCHAR},
+      </if>
+      <if test="cId != null" >
+        c_id = #{cId,jdbcType=INTEGER},
+      </if>
+      <if test="trainId != null" >
+        train_id = #{trainId,jdbcType=INTEGER},
+      </if>
+      <if test="sId != null" >
+        s_id = #{sId,jdbcType=INTEGER},
+      </if>
+      <if test="tId != null" >
+        t_id = #{tId,jdbcType=INTEGER},
+      </if>
+      <if test="attachmentType != null" >
+        attachment_type = #{attachmentType,jdbcType=VARCHAR},
+      </if>
+      <if test="attachmentTime != null" >
+        attachment_time = #{attachmentTime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where attachment_id = #{attachmentId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="net.william.educenter.entity.Attachment" >
+    update tb_attachment
+    set attachment_url = #{attachmentUrl,jdbcType=VARCHAR},
+      filename = #{filename,jdbcType=VARCHAR},
+      filesize = #{filesize,jdbcType=VARCHAR},
+      c_id = #{cId,jdbcType=INTEGER},
+      train_id = #{trainId,jdbcType=INTEGER},
+      s_id = #{sId,jdbcType=INTEGER},
+      t_id = #{tId,jdbcType=INTEGER},
+      attachment_type = #{attachmentType,jdbcType=VARCHAR},
+      attachment_time = #{attachmentTime,jdbcType=VARCHAR}
+    where attachment_id = #{attachmentId,jdbcType=INTEGER}
+  </update>
+</mapper>

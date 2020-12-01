@@ -1,0 +1,18 @@
+1: 导入数据库
+
+2: 项目导入eclipse或IntelliJ IDEA,修改application.yml配置文件（数据库名，账号和密码）jdbc.username=root
+jdbc.password=123456
+
+3: 访问
+用户访问URL: http://localhost:8088/signin
+类型选择: 用户
+学生用户访问账号：1600502215 密码：1600502215
+老师用户访问账号：1001 密码：1001
+企业用户访问账户：william 密码：william
+
+后台管理URL：http://localhost:8088/superuserlogin
+后台管理账号：william
+后台管理密码：william
+
+4:前端展示：http://localhost:8088/index
+  后台：http://localhost:8088/superuserindex

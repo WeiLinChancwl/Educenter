@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.william.educenter.mapper.ProblemMapper" >
+  <resultMap id="BaseResultMap" type="net.william.educenter.entity.Problem" >
+    <id column="problem_id" property="problemId" jdbcType="INTEGER" />
+    <result column="author" property="author" jdbcType="VARCHAR" />
+    <result column="question" property="question" jdbcType="VARCHAR" />
+    <result column="result" property="result" jdbcType="CHAR" />
+    <result column="score" property="score" jdbcType="INTEGER" />
+    <result column="answerA" property="answera" jdbcType="VARCHAR" />
+    <result column="answerB" property="answerb" jdbcType="VARCHAR" />
+    <result column="answerC" property="answerc" jdbcType="VARCHAR" />
+    <result column="answerD" property="answerd" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    problem_id, author, question, result, score, answerA, answerB, answerC, answerD
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="net.william.educenter.entity.ProblemExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from tb_problem
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_problem
+    where problem_id = #{problemId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tb_problem
+    where problem_id = #{problemId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="net.william.educenter.entity.ProblemExample" >
+    delete from tb_problem
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="net.william.educenter.entity.Problem" >
+    insert into tb_problem (problem_id, author, question, 
+      result, score, answerA, 
+      answerB, answerC, answerD
+      )
+    values (#{problemId,jdbcType=INTEGER}, #{author,jdbcType=VARCHAR}, #{question,jdbcType=VARCHAR}, 
+      #{result,jdbcType=CHAR}, #{score,jdbcType=INTEGER}, #{answera,jdbcType=VARCHAR}, 
+      #{answerb,jdbcType=VARCHAR}, #{answerc,jdbcType=VARCHAR}, #{answerd,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="net.william.educenter.entity.Problem" >
+    insert into tb_problem
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="problemId != null" >
+        problem_id,
+      </if>
+      <if test="author != null" >
+        author,
+      </if>
+      <if test="question != null" >
+        question,
+      </if>
+      <if test="result != null" >
+        result,
+      </if>
+      <if test="score != null" >
+        score,
+      </if>
+      <if test="answera != null" >
+        answerA,
+      </if>
+      <if test="answerb != null" >
+        answerB,
+      </if>
+      <if test="answerc != null" >
+        answerC,
+      </if>
+      <if test="answerd != null" >
+        answerD,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="problemId != null" >
+        #{problemId,jdbcType=INTEGER},
+      </if>
+      <if test="author != null" >
+        #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="question != null" >
+        #{question,jdbcType=VARCHAR},
+      </if>
+      <if test="result != null" >
+        #{result,jdbcType=CHAR},
+      </if>
+      <if test="score != null" >
+        #{score,jdbcType=INTEGER},
+      </if>
+      <if test="answera != null" >
+        #{answera,jdbcType=VARCHAR},
+      </if>
+      <if test="answerb != null" >
+        #{answerb,jdbcType=VARCHAR},
+      </if>
+      <if test="answerc != null" >
+        #{answerc,jdbcType=VARCHAR},
+      </if>
+      <if test="answerd != null" >
+        #{answerd,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="net.william.educenter.entity.ProblemExample" resultType="java.lang.Integer" >
+    select count(*) from tb_problem
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_problem
+    <set >
+      <if test="record.problemId != null" >
+        problem_id = #{record.problemId,jdbcType=INTEGER},
+      </if>
+      <if test="record.author != null" >
+        author = #{record.author,jdbcType=VARCHAR},
+      </if>
+      <if test="record.question != null" >
+        question = #{record.question,jdbcType=VARCHAR},
+      </if>
+      <if test="record.result != null" >
+        result = #{record.result,jdbcType=CHAR},
+      </if>
+      <if test="record.score != null" >
+        score = #{record.score,jdbcType=INTEGER},
+      </if>
+      <if test="record.answera != null" >
+        answerA = #{record.answera,jdbcType=VARCHAR},
+      </if>
+      <if test="record.answerb != null" >
+        answerB = #{record.answerb,jdbcType=VARCHAR},
+      </if>
+      <if test="record.answerc != null" >
+        answerC = #{record.answerc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.answerd != null" >
+        answerD = #{record.answerd,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_problem
+    set problem_id = #{record.problemId,jdbcType=INTEGER},
+      author = #{record.author,jdbcType=VARCHAR},
+      question = #{record.question,jdbcType=VARCHAR},
+      result = #{record.result,jdbcType=CHAR},
+      score = #{record.score,jdbcType=INTEGER},
+      answerA = #{record.answera,jdbcType=VARCHAR},
+      answerB = #{record.answerb,jdbcType=VARCHAR},
+      answerC = #{record.answerc,jdbcType=VARCHAR},
+      answerD = #{record.answerd,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="net.william.educenter.entity.Problem" >
+    update tb_problem
+    <set >
+      <if test="author != null" >
+        author = #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="question != null" >
+        question = #{question,jdbcType=VARCHAR},
+      </if>
+      <if test="result != null" >
+        result = #{result,jdbcType=CHAR},
+      </if>
+      <if test="score != null" >
+        score = #{score,jdbcType=INTEGER},
+      </if>
+      <if test="answera != null" >
+        answerA = #{answera,jdbcType=VARCHAR},
+      </if>
+      <if test="answerb != null" >
+        answerB = #{answerb,jdbcType=VARCHAR},
+      </if>
+      <if test="answerc != null" >
+        answerC = #{answerc,jdbcType=VARCHAR},
+      </if>
+      <if test="answerd != null" >
+        answerD = #{answerd,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where problem_id = #{problemId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="net.william.educenter.entity.Problem" >
+    update tb_problem
+    set author = #{author,jdbcType=VARCHAR},
+      question = #{question,jdbcType=VARCHAR},
+      result = #{result,jdbcType=CHAR},
+      score = #{score,jdbcType=INTEGER},
+      answerA = #{answera,jdbcType=VARCHAR},
+      answerB = #{answerb,jdbcType=VARCHAR},
+      answerC = #{answerc,jdbcType=VARCHAR},
+      answerD = #{answerd,jdbcType=VARCHAR}
+    where problem_id = #{problemId,jdbcType=INTEGER}
+  </update>
+</mapper>

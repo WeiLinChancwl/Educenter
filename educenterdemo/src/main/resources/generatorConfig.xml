@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--数据库驱动jar -->
+    <classPathEntry
+            location="D:\JavaEE\mysql-connector-java-8.0.13.jar"/>
+
+    <context id="Tables" targetRuntime="MyBatis3">
+        <!--去除注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <!--数据库连接 -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/educenter?serverTimezone=UTC&amp;useSSL=false"
+                        userId="root"
+                        password="123456">
+            <property name="nullCatalogMeansCurrent" value="true"/>
+        </jdbcConnection>
+        <!--默认false Java type resolver will always use java.math.BigDecimal if
+              the database column is of type DECIMAL or NUMERIC. -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!--生成实体类 指定包名 以及生成的地址 （可以自定义地址，但是路径不存在不会自动创建 使用Maven生成在target目录下，会自动创建） -->
+        <javaModelGenerator targetPackage="net.william.educenter.entity"
+                            targetProject="D:\JavaEE\educenter\educenterdemo\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!--生成SQLMAP文件 -->
+        <sqlMapGenerator targetPackage="net.william.educenter.mapper"
+                         targetProject="D:\JavaEE\educenter\educenterdemo\src\main\resources">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+        <!--生成Dao文件 可以配置 type="XMLMAPPER"生成xml的dao实现 context id="DB2Tables" 修改targetRuntime="MyBatis3" -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="net.william.educenter.mapper"
+                             targetProject="D:\JavaEE\educenter\educenterdemo\src\main\java">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+
+        <!--&lt;!&ndash;对应数据库表 mysql可以加入主键自增 字段命名 忽略某字段等 &ndash;&gt;-->
+        <!--<table tableName="tb_course" domainObjectName="Course"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_dept" domainObjectName="Dept"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_if_take_course" domainObjectName="IfTakeCourse"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_major" domainObjectName="Major"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_message" domainObjectName="Message"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_organization" domainObjectName="Organization"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_school" domainObjectName="School"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_stu_course" domainObjectName="StuCourse"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_stu_task" domainObjectName="StuTask"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_student" domainObjectName="Student"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_superuser" domainObjectName="SuperUser"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_teacher" domainObjectName="Teacher"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_blog" domainObjectName="Blog"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_contact" domainObjectName="Contact"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_event" domainObjectName="Event"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_stu_train" domainObjectName="StuTrain"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_train" domainObjectName="Train"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_notice" domainObjectName="Notice"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+        <table tableName="tb_attachment" domainObjectName="Attachment"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"/>
+        <!--<table tableName="tb_slide" domainObjectName="Slide"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_new" domainObjectName="New"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true"/>-->
+        <!--<table tableName="tb_problem" domainObjectName="Problem"-->
+               <!--enableCountByExample="true" enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"/>-->
+    </context>
+</generatorConfiguration>

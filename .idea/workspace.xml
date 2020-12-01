@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2718f6b4-318e-4867-abcf-905c1435ce7d" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/educenterdemo/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="educenter" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cloudwisdom</find>
+      <find>resultMap</find>
+      <find>New</find>
+      <find>ctrain</find>
+      <find>Course</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>educenter</replace>
+      <replace>Attachment</replace>
+      <replace>Problem</replace>
+      <replace>train</replace>
+      <replace>Train</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\JavaEE\educenter\educenterdemo\src\main\java\net\william\educenter</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/organization/newtable.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/superuser/sidebar.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/Main/BinTree.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/Main/test.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/Main/Person.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/Main/Teacher.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/Main/MyStack.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/mapper/ProblemMapper.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/service/ProblemService.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/header.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/result.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/CourseController.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/course-admin.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/course-test.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/courses.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/mapper/AttachmentMapper.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/service/AttachmentService.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/FileController.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/trainlearn.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/train-admin.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/header.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/train.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/TrainController.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/courses.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/courselearn.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/train.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/organization/stucoursetable.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/grade.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/course-single.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/blog.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/blog.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/blog-single.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/teacher.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/course-single.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/contact.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/courses.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/blog.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/GuideController.java" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/notice.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/events.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/course-single.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/event-single.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/blog-single.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/notice.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/organization/sidebar.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/organization/organizationindex.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/superuser/superuserindex.ftl" />
+        <option value="$PROJECT_DIR$/educenterdemo/src/main/resources/templates/superuser/charts.ftl" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\JavaEE\maven_repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\JavaEE\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="educenterdemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="educenterdemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="educenterdemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="984" />
+    <option name="height" value="1044" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="educenter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="educenter" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606755901931" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaEE\educenter\educenterdemo\src\main\resources\static\images\backgrounds" />
+      <recent name="D:\JavaEE\educenter\src\main\java\net\william\educenter" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaEE\educenter\educenterdemo\src\main\resources\static\images" />
+      <recent name="D:\JavaEE\educenter\educenterdemo\src\main\resources\templates\student" />
+      <recent name="D:\JavaEE\educenter\educenterdemo\src\main\resources\templates\teacher" />
+      <recent name="D:\JavaEE\educenter\educenterdemo\src\main\resources\templates\superuser" />
+      <recent name="D:\JavaEE\educenter\educenterdemo\src\main\resources\templates\organization" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.william.educenter.service" />
+      <recent name="net.william.educenter.controller" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="net.william.educenter.Main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.2770885" />
+  </component>
+  <component name="RunManager">
+    <configuration name="EducenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="educenterdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.william.educenter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.william.educenter.EducenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2718f6b4-318e-4867-abcf-905c1435ce7d" name="Default Changelist" comment="" />
+      <created>1582713244910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582713244910</updated>
+      <workItem from="1582713252120" duration="1395000" />
+      <workItem from="1582732682882" duration="663000" />
+      <workItem from="1582775148553" duration="6199000" />
+      <workItem from="1583306424388" duration="2694000" />
+      <workItem from="1583309682540" duration="2453000" />
+      <workItem from="1583312165576" duration="2869000" />
+      <workItem from="1583315171575" duration="326000" />
+      <workItem from="1583315508537" duration="1568000" />
+      <workItem from="1583317101477" duration="744000" />
+      <workItem from="1583369790090" duration="15575000" />
+      <workItem from="1583661587129" duration="17735000" />
+      <workItem from="1583715350404" duration="6149000" />
+      <workItem from="1583768407013" duration="811000" />
+      <workItem from="1583799470711" duration="8459000" />
+      <workItem from="1583898951520" duration="2961000" />
+      <workItem from="1583911968400" duration="3130000" />
+      <workItem from="1584001058212" duration="3633000" />
+      <workItem from="1584091898766" duration="4981000" />
+      <workItem from="1584355283784" duration="860000" />
+      <workItem from="1584625197321" duration="740000" />
+      <workItem from="1584763948263" duration="666000" />
+      <workItem from="1584941139659" duration="2168000" />
+      <workItem from="1584957895151" duration="1237000" />
+      <workItem from="1584969141973" duration="602000" />
+      <workItem from="1585186329696" duration="6885000" />
+      <workItem from="1585532131343" duration="12412000" />
+      <workItem from="1585547378015" duration="390000" />
+      <workItem from="1585547816898" duration="432000" />
+      <workItem from="1585548296341" duration="10949000" />
+      <workItem from="1585619739918" duration="14880000" />
+      <workItem from="1585703514478" duration="31113000" />
+      <workItem from="1585792037739" duration="4032000" />
+      <workItem from="1586687422809" duration="650000" />
+      <workItem from="1588234053303" duration="2404000" />
+      <workItem from="1588684586316" duration="618000" />
+      <workItem from="1589098401319" duration="621000" />
+      <workItem from="1589212580396" duration="659000" />
+      <workItem from="1589293161309" duration="1653000" />
+      <workItem from="1589343266834" duration="2010000" />
+      <workItem from="1589473512336" duration="1272000" />
+      <workItem from="1589528255448" duration="10646000" />
+      <workItem from="1589589428520" duration="3170000" />
+      <workItem from="1592061195507" duration="175000" />
+      <workItem from="1597769883260" duration="289000" />
+      <workItem from="1601028491935" duration="223000" />
+      <workItem from="1602078200740" duration="879000" />
+      <workItem from="1602776961311" duration="587000" />
+      <workItem from="1606669979380" duration="12000" />
+      <workItem from="1606750802105" duration="3007000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="198586000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.21261115" />
+      <window_info id="Structure" order="1" sideWeight="0.50177306" side_tool="true" weight="0.261924" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50177306" side_tool="true" weight="0.261924" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.61702126" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32978722" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5012126" side_tool="true" weight="0.3776596" />
+      <window_info anchor="bottom" id="Spring" order="12" weight="0.32978722" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32978722" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4987874" visible="true" weight="0.34042552" />
+      <window_info anchor="bottom" id="Problems" order="16" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2497979" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32983023" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32983023" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32983023" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.21827" />
+      <window_info id="Structure" order="1" sideWeight="0.50177306" side_tool="true" weight="0.261924" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50177306" side_tool="true" weight="0.261924" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.61702126" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32978722" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5012126" side_tool="true" weight="0.3776596" />
+      <window_info anchor="bottom" id="Spring" order="12" weight="0.32978722" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32978722" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4987874" weight="0.32978722" />
+      <window_info anchor="bottom" id="Problems" order="16" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2497979" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32983023" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32983023" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32983023" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/organization/stucoursetable.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/organization/studenttable.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3312">
+          <caret line="144" column="10" selection-start-line="30" selection-end-line="147" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/superuser/studenttable.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="118" column="58" selection-start-line="118" selection-start-column="58" selection-end-line="118" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2829">
+          <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/net/william/educenter/mapper/StudentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/net/william/educenter/mapper/StuCourseMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/net/william/educenter/mapper/SchoolMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/net/william/educenter/mapper/AttachmentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="136" column="18" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/mapper/AttachmentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/entity/Attachment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/net/william/educenter/mapper/BlogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/EducenterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/entity/Blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/signin.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/news.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1472">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/new-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="72" column="75" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/task.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/blog-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454">
+          <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/blog.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="75" column="54" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/blog.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="76" column="64" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/teacher.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="77" column="33" lean-forward="true" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/course-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="64" column="100" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/contact.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/course-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/blog.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="75" column="54" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/about.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-759" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/new-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/GuideController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/notice-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="96" column="57" lean-forward="true" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/events.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/courses.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/event-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4209" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/blog-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="61" column="92" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/teacher/course-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/event-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/courses.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="38" column="76" selection-start-line="38" selection-start-column="76" selection-end-line="38" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/events.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/blog-single.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="132" column="74" lean-forward="true" selection-start-line="132" selection-start-column="74" selection-end-line="132" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/notice.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2116">
+          <caret line="92" column="65" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/notice.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="63" column="61" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/organization/organizationindex.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/superuser/topbar.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/superuser/superuserindex.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="78" column="42" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/student/courselearn.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2231">
+          <caret line="97" column="67" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/java/net/william/educenter/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2622">
+          <caret line="128" column="20" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/organization/sidebar.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/organization/topbar.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/educenterdemo/src/main/resources/templates/superuser/charts.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="110" column="21" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>educenter</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

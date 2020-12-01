@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/educenter?serverTimezone=UTC&useSSL=false&userUnicode=true&characterEncoding=UTF-8
+    password: 123456
+  freemarker:
+    template-loader-path: classpath:/templates/
+server:
+  port: 8088

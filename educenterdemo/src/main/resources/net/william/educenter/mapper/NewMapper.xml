@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.william.educenter.mapper.NewMapper" >
+  <resultMap id="BaseResultMap" type="net.william.educenter.entity.New" >
+    <result column="new_id" property="newId" jdbcType="INTEGER" />
+    <result column="new_title" property="newTitle" jdbcType="VARCHAR" />
+    <result column="new_time" property="newTime" jdbcType="VARCHAR" />
+    <result column="new_from" property="newFrom" jdbcType="VARCHAR" />
+    <result column="new_writer" property="newWriter" jdbcType="VARCHAR" />
+    <result column="new_img" property="newImg" jdbcType="VARCHAR" />
+    <result column="new_type" property="newType" jdbcType="VARCHAR" />
+    <result column="new_content" property="newContent" jdbcType="VARCHAR" />
+    <result column="new_cn" property="newCn" jdbcType="VARCHAR" />
+    <result column="new_en" property="newEn" jdbcType="VARCHAR" />
+    <result column="new_translator" property="newTranslator" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    new_id, new_title, new_time, new_from, new_writer, new_img, new_type, new_content, 
+    new_cn, new_en, new_translator
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="net.william.educenter.entity.NewExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from tb_new
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="net.william.educenter.entity.NewExample" >
+    delete from tb_new
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="net.william.educenter.entity.New" >
+    insert into tb_new (new_id, new_title, new_time, 
+      new_from, new_writer, new_img, 
+      new_type, new_content, new_cn, 
+      new_en, new_translator)
+    values (#{newId,jdbcType=INTEGER}, #{newTitle,jdbcType=VARCHAR}, #{newTime,jdbcType=VARCHAR}, 
+      #{newFrom,jdbcType=VARCHAR}, #{newWriter,jdbcType=VARCHAR}, #{newImg,jdbcType=VARCHAR}, 
+      #{newType,jdbcType=VARCHAR}, #{newContent,jdbcType=VARCHAR}, #{newCn,jdbcType=VARCHAR}, 
+      #{newEn,jdbcType=VARCHAR}, #{newTranslator,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="net.william.educenter.entity.New" >
+    insert into tb_new
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="newId != null" >
+        new_id,
+      </if>
+      <if test="newTitle != null" >
+        new_title,
+      </if>
+      <if test="newTime != null" >
+        new_time,
+      </if>
+      <if test="newFrom != null" >
+        new_from,
+      </if>
+      <if test="newWriter != null" >
+        new_writer,
+      </if>
+      <if test="newImg != null" >
+        new_img,
+      </if>
+      <if test="newType != null" >
+        new_type,
+      </if>
+      <if test="newContent != null" >
+        new_content,
+      </if>
+      <if test="newCn != null" >
+        new_cn,
+      </if>
+      <if test="newEn != null" >
+        new_en,
+      </if>
+      <if test="newTranslator != null" >
+        new_translator,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="newId != null" >
+        #{newId,jdbcType=INTEGER},
+      </if>
+      <if test="newTitle != null" >
+        #{newTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="newTime != null" >
+        #{newTime,jdbcType=VARCHAR},
+      </if>
+      <if test="newFrom != null" >
+        #{newFrom,jdbcType=VARCHAR},
+      </if>
+      <if test="newWriter != null" >
+        #{newWriter,jdbcType=VARCHAR},
+      </if>
+      <if test="newImg != null" >
+        #{newImg,jdbcType=VARCHAR},
+      </if>
+      <if test="newType != null" >
+        #{newType,jdbcType=VARCHAR},
+      </if>
+      <if test="newContent != null" >
+        #{newContent,jdbcType=VARCHAR},
+      </if>
+      <if test="newCn != null" >
+        #{newCn,jdbcType=VARCHAR},
+      </if>
+      <if test="newEn != null" >
+        #{newEn,jdbcType=VARCHAR},
+      </if>
+      <if test="newTranslator != null" >
+        #{newTranslator,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="net.william.educenter.entity.NewExample" resultType="java.lang.Integer" >
+    select count(*) from tb_new
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_new
+    <set >
+      <if test="record.newId != null" >
+        new_id = #{record.newId,jdbcType=INTEGER},
+      </if>
+      <if test="record.newTitle != null" >
+        new_title = #{record.newTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.newTime != null" >
+        new_time = #{record.newTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.newFrom != null" >
+        new_from = #{record.newFrom,jdbcType=VARCHAR},
+      </if>
+      <if test="record.newWriter != null" >
+        new_writer = #{record.newWriter,jdbcType=VARCHAR},
+      </if>
+      <if test="record.newImg != null" >
+        new_img = #{record.newImg,jdbcType=VARCHAR},
+      </if>
+      <if test="record.newType != null" >
+        new_type = #{record.newType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.newContent != null" >
+        new_content = #{record.newContent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.newCn != null" >
+        new_cn = #{record.newCn,jdbcType=VARCHAR},
+      </if>
+      <if test="record.newEn != null" >
+        new_en = #{record.newEn,jdbcType=VARCHAR},
+      </if>
+      <if test="record.newTranslator != null" >
+        new_translator = #{record.newTranslator,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_new
+    set new_id = #{record.newId,jdbcType=INTEGER},
+      new_title = #{record.newTitle,jdbcType=VARCHAR},
+      new_time = #{record.newTime,jdbcType=VARCHAR},
+      new_from = #{record.newFrom,jdbcType=VARCHAR},
+      new_writer = #{record.newWriter,jdbcType=VARCHAR},
+      new_img = #{record.newImg,jdbcType=VARCHAR},
+      new_type = #{record.newType,jdbcType=VARCHAR},
+      new_content = #{record.newContent,jdbcType=VARCHAR},
+      new_cn = #{record.newCn,jdbcType=VARCHAR},
+      new_en = #{record.newEn,jdbcType=VARCHAR},
+      new_translator = #{record.newTranslator,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>
